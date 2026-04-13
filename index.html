@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Deaths Clothes - Streetwear seleccionado, drops y piezas con actitud." />
+  <title>Deaths Clothes | Streetwear seleccionado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="Deaths Clothes Home">
+        <img src="assets/images/logo-deaths.webp" alt="Logo Deaths Clothes" loading="eager" />
+        <span>Deaths Clothes</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegacion principal">
+        <a href="#drop">Drop</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#marca">Marca</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site-shell">
+
+    <main id="top">
+      <section class="hero section-block" id="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Streetwear / Vintage Curado</p>
+          <h1>Deaths Clothes</h1>
+          <p class="hero-lead">Streetwear seleccionado. Drops cortos y piezas con actitud para vender directo desde mobile.</p>
+          <div class="hero-actions">
+            <a href="#drop" class="btn btn-primary">Ver drop</a>
+            <a href="#categorias" class="btn btn-secondary">Explorar categorias</a>
+          </div>
+          <ul class="hero-points" aria-label="Puntos destacados de marca">
+            <li>Curaduria real</li>
+            <li>Stock limitado</li>
+            <li>Recorrido claro de compra</li>
+          </ul>
+        </div>
+
+        <div class="hero-media" aria-label="Visual principal de drop">
+          <article class="hero-main-image">
+            <img src="assets/images/hero-deaths.webp" alt="Seleccion streetwear Deaths Clothes" loading="eager" />
+            <span class="hero-tag">Drop activo</span>
+          </article>
+          <div class="hero-side-stack" aria-hidden="true">
+            <article class="hero-side-card">
+              <img src="assets/images/producto-5.webp" alt="Adidas track jacket" loading="lazy" />
+            </article>
+            <article class="hero-side-card">
+              <img src="assets/images/catalogo-deaths.webp" alt="Catalogo Deaths Clothes" loading="lazy" />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block products" id="drop">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Catalogo</p>
+            <h2>Drop actual</h2>
+          </div>
+          <p class="result-label" id="resultLabel">Mostrando todo el drop</p>
+        </div>
+
+        <div class="filter-row" aria-label="Filtros de catalogo">
+          <button class="filter-chip is-active" type="button" data-filter="All">Todo</button>
+          <button class="filter-chip" type="button" data-filter="Jackets">Jackets</button>
+          <button class="filter-chip" type="button" data-filter="T-Shirts">T-Shirts</button>
+          <button class="filter-chip" type="button" data-filter="Vintage pieces">Vintage pieces</button>
+        </div>
+
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="section-block categories" id="categorias">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Categorias</p>
+            <h2>Explora por estilo</h2>
+          </div>
+        </div>
+
+        <div class="category-grid">
+          <button class="category-card" type="button" data-filter="Vintage pieces">
+            <img src="assets/images/producto-1.webp" alt="Categoria Vintage pieces" loading="lazy" />
+            <span>Vintage pieces</span>
+          </button>
+          <button class="category-card" type="button" data-filter="Jackets">
+            <img src="assets/images/producto-5.webp" alt="Categoria Jackets" loading="lazy" />
+            <span>Jackets</span>
+          </button>
+          <button class="category-card" type="button" data-filter="T-Shirts">
+            <img src="assets/images/producto-6.webp" alt="Categoria T-Shirts" loading="lazy" />
+            <span>T-Shirts</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section-block brand-trust" id="marca">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Marca</p>
+            <h2>Hecho para destacar</h2>
+          </div>
+        </div>
+
+        <div class="trust-grid">
+          <article>
+            <h3>Seleccion curada</h3>
+            <p>Solo entran piezas con presencia real de calle y buen estado de prenda.</p>
+          </article>
+          <article>
+            <h3>Drop limitado</h3>
+            <p>Catalogo corto para generar rotacion rapida y deseo por cada release.</p>
+          </article>
+          <article>
+            <h3>Street premium</h3>
+            <p>Diseno limpio, fuerte y directo para vender mejor que un feed desordenado.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block cta-final" id="ctaFinal">
+        <div class="cta-copy">
+          <p class="eyebrow">Siguiente paso</p>
+          <h2>Ver todo el drop completo</h2>
+          <p>Una vidriera digital clara, con foco total en producto y decision de compra rapida.</p>
+          <a href="#drop" class="btn btn-primary">Explorar catalogo</a>
+        </div>
+        <figure class="cta-visual" aria-hidden="true">
+          <img src="assets/images/catalogo-deaths.webp" alt="Percheros de catalogo" loading="lazy" />
+        </figure>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal" id="productModal" aria-hidden="true" role="dialog" aria-label="Detalle de producto">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-panel" role="document">
+      <button class="modal-close" id="closeModal" aria-label="Cerrar detalle">&times;</button>
+      <div class="modal-image-wrap">
+        <img id="modalImage" src="" alt="Producto seleccionado" />
+      </div>
+      <div class="modal-content">
+        <p class="eyebrow" id="modalCategory"></p>
+        <h3 id="modalName"></h3>
+        <p class="modal-price" id="modalPrice"></p>
+        <p id="modalDescription"></p>
+        <a id="modalConsult" class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">Consultar</a>
+      </div>
+    </article>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
